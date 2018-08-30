@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pages>
+    <Page name="Login">
+        <Control label="loginUser" type="TextBox" id="j_username" />
+        <Control label="loginPW" type="TextBox" id="j_password" />
+        <Control label="loginButton" type="Button" xpath="//button[text()='Login']" />
+    </Page>
+    <Page name="Templates">
+        <Control label="Create New Template" type="Button" xpath="//a[@title='Create New Template']/i" />
+        <Control label="Design Bundles" type="Button" xpath="//a[@title='Design Bundles']" />
+        <Control label="Copy" type="Button" xpath="//a[@title='Copy']/i" />
+        <Control label="Trash" type="Button" xpath="//a[@title='Trash']/i" />
+        <Control label="Template List" type="Grid" xpath="//div[@list='templateList' and @persist-id='templateList']" />
+    </Page>
+    <Page name="Layouts">
+        <Control label="Create New Layout" type="Button" xpath="//a[@title='Create New Layout']/i" />
+        <Control label="Import Layout" type="Button" xpath="//a[@title='Import Layout']/i" />
+        <Control label="Layout List" type="Grid" xpath="//div[@class='cm-table-wrapper ng-isolate-scope' and @list='layoutList']" />
+    </Page>
+    <Page name="Create New Template">
+        <Control label="Continue" type="Button" xpath="//button[text()='Continue']" />
+        <Control label="Template Type" type="RadioButtonList" xpath="//b[text()='Template Type']/../div[@class='control-group']" />
+    </Page>
+    <Page name="Design Bundles">
+        <Control label="Bundle List" type="Grid" xpath="//div[@list='bundleList' and @persist-id='bundleList']" />
+        <Control label="Create New Bundle" type="Button" xpath="//a[@title='Create New Bundle']/i" />
+        <Control label="View all" type="Button" xpath="//span[text()='View all']" />
+    </Page>
+    <Page name="Layout Chooser">
+        <Control label="New" type="Button" xpath="//button[text()='New']" />
+        <Control label="Import Selected Layouts" type="Button" xpath="//button[text()='Import Selected Layouts']" />
+        <Control label="System Layout List" type="Grid" xpath="//div[@class='cm-table-wrapper ng-isolate-scope' and @list='systemLayoutList']" />
+    </Page>
+    <Page name="Design Manager">
+        <Control label="Name" type="TextBox" name="name" />
+        <Control label="Description" type="TextBox" name="description" />
+        <Control label="Save" type="Button" xpath="//input[@value='Save']" />
+        <Control label="History" type="Button" xpath="//a[@title='History']" />
+        <Control label="Usage" type="Button" xpath="//a[@title='Usage']" />
+        <Control label="Error message" type="Message" xpath="//div[@class='alert ng-isolate-scope alert-error']" />
+    </Page>
+    <Page name="Layout Manager">
+        <Control label="Description" type="TextBox" name="ts_description" />
+        <Control label="Save" type="Button" xpath="//button[text()='Save']" />
+    </Page>
+    <Page name="Save your Design Bundle Changes">
+        <Control label="Comments" type="TextBox" name="comment" />
+        <Control label="Save" type="Button" xpath="//button[text()='Save']" />
+        <Control label="Assign to Development Environment" type="CheckBox" xpath="//*[contains(text(), 'Assign to Development Environment')]/../input" />
+        <Control label="Assign to Staging Environment" type="CheckBox" xpath="//*[contains(text(), 'Assign to Staging Environment')]/../input" />
+    </Page>
+    <Page name="Template Builder">
+        <Control label="Name" type="TextBox" id="ts_name" />
+        <Control label="Description" type="TextBox" id="ts_description" />
+        <Control label="Resource bundle" type="Button" xpath="//a[contains(@class, 'left-nav-icons resource-bundle-icon')]" />
+        <Control label="Save" type="Button" xpath="//button[text()='Save']" />
+        <Control label="Page Components" type="Button" xpath="//a[contains(@class, 'cm-icon-Components')]" />
+        <Control label="Media" type="Button" xpath="//a[contains(@class,'cm-icon-Media')]" />
+    </Page>
+    <Page name="Page Components">
+        <Control label="Content Fields" type="Button" xpath="//*[contains(text(),'Content Fields')]/i" />
+        <Control label="Sub-Templates" type="Button" xpath="//*[contains(text(),'Sub-Templates')]/i" />
+        <Control label="Widgets" type="Button" xpath="//*[contains(text(),'Widgets')]/i" />
+        <Control label="HTML" type="Button" xpath="//*[contains(text(), 'HTML')]/i" />
+        <Control label="Save" type="Button" xpath="//button[text()='Save']" />
+        <Control label="Media" type="Button" xpath="//a[contains(@class,'cm-icon-Media')]" />
+    </Page>
+    <Page name="Media">
+        <Control label="Search" type="Button" xpath="//button[text()='Search']" />
+        <Control label="Save" type="Button" xpath="//button[text()='Save']" />
+        <Control label="Media type" type="DropDown" xpath="//div[contains(@class,'cm-template-media-select')]/select" />
+        <Control label="Resource bundle" type="Button" xpath="//a[contains(@class,'resource-bundle-icon')]" />
+        <Control label="Media Placement" type="Button" xpath="//a[contains(text(),'Media Placement')]" />
+        <Control label="testNewUI - No Assignment" type="Button" xpath="//span[text()='testNewUI - No Assignment']/..//i[@title='Select/Replace Media']" />
+        <Control label="Audio - No Assignment" type="Button" xpath="//span[text()='Audio - No Assignment']/..//i[@title='Select/Replace Media']" />
+        <Control label="Image - No Assignment" type="Button" xpath="//span[text()='Image - No Assignment']/..//i[@title='Select/Replace Media']" />
+        <Control label="Video - No Assignment" type="Button" xpath="//span[text()='Video - No Assignment']/..//i[@title='Select/Replace Media']" />
+        <Control label="Doc - No Assignment" type="Button" xpath="//span[text()='Doc - No Assignment']/..//i[@title='Select/Replace Media']" />
+        <Control label="Binary - No Assignment" type="Button" xpath="//span[text()='Binary - No Assignment']/..//i[@title='Select/Replace Media']" />
+        <Control label="AdImages - No Assignment" type="Button" xpath="//span[text()='AdImages - No Assignment']/..//i[@title='Select/Replace Media']" />
+        <Control label="AdFlash - No Assignment" type="Button" xpath="//span[text()='AdFlash - No Assignment']/..//i[@title='Select/Replace Media']" />
+        <Control label="sizecheck - No Assignment" type="Button" xpath="//span[text()='sizecheck - No Assignment']/..//i[@title='Select/Replace Media']" />
+        <Control label="sub-audio - No Assignment" type="Button" xpath="//span[text()='sub-audio - No Assignment']/..//i[@title='Select/Replace Media']" />
+        <Control label="Thumbnail - No Assignment" type="Button" xpath="//span[text()='Thumbnail - No Assignment']/..//i[@title='Select/Replace Media']" />
+        <Control label="Category" type="Button" xpath="//a[contains(@class, 'cm-icon-Category')]" />
+        <Control label="Subscriptions" type="Button" xpath="//a[contains(@class,'cm-icon-Subscriptions')]" />
+    </Page>
+    <Page name="Bundle History">
+        <Control label="History" type="GridHistory" xpath="//table[@class='table table-bordered table-hover table-condensed']" />
+    </Page>
+    <Page name="Template Resources">
+        <Control label="Add" type="Button" xpath="//a[@title='Add']/i" />
+        <Control label="Save" type="Button" xpath="//button[text()='Save']" />
+        <Control label="Remove" type="Button" xpath="//a[@title='Remove']/i" />
+        <Control label="Assigned Bundle List" type="Grid" xpath="//div[@class='cm-table-wrapper ng-isolate-scope' and @list='assignedBundleList']" />
+    </Page>
+    <Page name="Add Resources">
+        <Control label="Available Bundle List" type="Grid" xpath="//div[@class='cm-table-wrapper ng-isolate-scope' and @list='availableBundleList']" />
+        <Control label="Add Resources" type="Button" xpath="//button[text()='Add Resources']" />
+    </Page>
+    <Page name="Confirm Save">
+        <Control label="Comments" type="TextBox" xpath="//textarea[@class='ng-pristine ng-invalid ng-invalid-required']" />
+        <Control label="Save" type="Button" xpath="//button[text()='Save' and @ng-disabled='applyVerCurrForm.$invalid']" />
+        <Control label="Assign to Development Environment" type="CheckBox" xpath="//div[@style='margin-top:10px'][1]/input" />
+        <Control label="Assign to Staging Environment" type="CheckBox" xpath="//div[@style='margin-top:10px'][2]/input" />
+        <Control label="Assign to Production Environment" type="CheckBox" xpath="//div[@style='margin-top:10px'][3]/input" />
+    </Page>
+    <Page name="References">
+        <Control label="Bundle Usage Entity List" type="Grid" xpath="//div[@class='cm-table-wrapper ng-isolate-scope' and list='bundleUsageEntityList']" />
+    </Page>
+    <Page name="Add Sub Template Resources">
+        <Control label="Available Bundle List" type="Grid" xpath="//div[@class='cm-table-wrapper ng-isolate-scope' and @list='availableBundleList']" />
+        <Control label="Add Resources" type="Button" xpath="//button[text()='Add Resources']" />
+    </Page>
+    <Page name="Copy Template">
+        <Control label="OK" type="Button" xpath="//button[text()='OK']" />
+    </Page>
+    <Page name="Delete Template">
+        <Control label="OK" type="Button" xpath="//button[text()='OK']" />
+    </Page>
+    <Page name="Contents">
+        <Control label="Create New Content" type="Button" xpath="//a[@title='Create New Content']/i" />
+        <Control label="Copy" type="Button" xpath="//a[@title='Copy']/i" />
+        <Control label="Trash" type="Button" xpath="//a[@title='Trash']/i" />
+        <Control label="Add filter" type="Button" xpath="//span[@class='cm-add-filters']" />
+        <Control label="Edit Date" type="Button" xpath="//span[text()='Edit Date']" />
+        <Control label="Content List" type="Grid" xpath="//div[@list='contentList' and @persist-id='contentList']" />
+    </Page>
+    <Page name="Manage Filters">
+        <Control label="All Fields" type="CheckBox" xpath="//span[contains(text(),'All Fields')]/../..//input[@type='checkbox']" />
+        <Control label="Update Filters" type="Button" xpath="//button[text()='Update Filters']" />
+    </Page>
+    <Page name="Select Template">
+        <Control label="Filter" type="TextBox" xpath="//input[@placeholder='Type and choose a template']" />
+        <Control label="subhadra (Area 51 Article)" type="Link" xpath="//a[contains(text(),'(Area 51 Article)')]/strong[contains(text(),'subhadra')]" />
+        <Control label="Dest (All Fields)" type="Link" xpath="//a[contains(text(),'Dest')]/strong[contains(text(),'All Fields')]" />
+        <Control label="Zonkeymedia (Area 51 Article)" type="Link" xpath="//a[contains(text(),'(Area 51 Article)')]/strong[contains(text(),'Zonkeymedia')]" />
+        <Control label="1 subhadra (Area 51 Article)" type="Link" xpath="//a[contains(text(),'(Area 51 Article)')]/strong[contains(text(),'1 subhadra')]" />
+        <Control label="All media fields in canvas (All Fields)" type="Link" xpath="//a[contains(text(),'All media fields in canvas')]/strong[contains(text(),'All Fields')]" />
+        <Control label="Select" type="Button" xpath="//button[text()='Select']" />
+    </Page>
+    <Page name="Content Editor">
+        <Control label="Title" type="TextBox" name="title" />
+        <Control label="ewqw" type="TextBox" name="seo_title" />
+        <Control label="Category" type="Button" xpath="//a[contains(@class, 'cm-icon-Category')]" />
+        <Control label="Media" type="Button" xpath="//a[contains(@class, 'cm-icon-Media')]" />
+        <Control label="Packages" type="Button" xpath="//a[contains(@class,'cm-icon-Packages')]" />
+        <Control label="more options" type="Link" xpath="//a[text()='more options']" />
+    </Page>
+    <Page name="Category">
+        <Control label="Area 51 Content" type="DropDown" name="catOpt0" />
+        <Control label="Area 51 Media" type="DropDown" name="catOpt1" />
+        <Control label="Area 51 Content Multi" type="DropDown" name="catSet1" />
+        <Control label="Topic" type="DropDown" name="catOpt3" />
+        <Control label="Animal Type" type="TextBox" name="catSet3" />
+        <Control label="Sandy Set" type="TextBox" name="catSet4" />
+        <Control label="media-category" type="DropDown" name="catOpt6" />
+        <Control label="Test_A" type="DropDown" name="catOpt5" />
+        <Control label="Test_B" type="DropDown" name="catOpt6" />
+        <Control label="Save" type="Button" xpath="//button[text()='Save']" />
+        <Control label="Calendar" type="Button" xpath="//a[contains(@class,'cm-icon-Calendar')]" />
+        <Control label="Subscriptions" type="Button" xpath="//a[contains(@class,'cm-icon-Subscriptions')]" />
+    </Page>
+    <Page name="Save Options">
+        <Control label="Comments" type="TextBox" xpath="//textarea[@placeholder='Comments...']" />
+        <Control label="Save" type="Button" xpath="//button[text()='Save' and @ng-click='save()']" />
+    </Page>
+    <Page name="Distribution Schedule">
+        <Control label="www.area51orca.com (/)" type="CheckBox" xpath="//span[contains(text(),'www.area51orca.com')]/../../input" />
+        <Control label="Close" type="Button" xpath="//button[text()='Close']" />
+    </Page>
+    <Page name="Calendar">
+        <Control label="Add Schedule" type="Button" xpath="//a[text()='Add Schedule']" />
+        <Control label="Subscriptions" type="Button" xpath="//a[contains(@class,'cm-icon-Subscriptions')]" />
+    </Page>
+    <Page name="Subscription">
+        <Control label="Fixed" type="CheckBox" xpath="//div[@class='cp-check-default ng-scope ng-binding'][3]/input" />
+        <Control label="Packages" type="Button" xpath="//a[contains(@class,'cm-icon-Packages')]" />
+    </Page>
+    <Page name="Packages">
+        <Control label="bulk media testing Package" type="CheckBox" xpath="//div[@class='cp-check-default ng-scope ng-binding'][1]/input" />
+        <Control label="PP2 in progress" type="CheckBox" xpath="//div[@class='cp-check-default ng-scope ng-binding'][6]/input" />
+        <Control label="Save" type="Button" xpath="//button[text()='Save']" />
+    </Page>
+    <Page name="Assigned Category">
+        <Control label="Add" type="Button" xpath="//button[text()='Add']" />
+        <Control label="OK" type="Button" xpath="//button[text()='OK']" />
+    </Page>
+    <Page name="Media Placements - Audio (Audio)">
+        <Control label="Name" type="TextBox" xpath="//input[@ng-model='searchMediaItems.filters.searchText.value']" />
+        <Control label="Search" type="Button" xpath="//button[text()='Search']" />
+        <Control label="Select and Close" type="Button" xpath="//button[text()='Select and Close']" />
+        <Control label="radio" type="CheckBox" xpath="//input[@type='radio']" />
+    </Page>
+    <Page name="Media Placements - Image (Images)">
+        <Control label="Name" type="TextBox" xpath="//input[@ng-model='searchMediaItems.filters.searchText.value']" />
+        <Control label="Search" type="Button" xpath="//button[text()='Search']" />
+        <Control label="Select and Close" type="Button" xpath="//button[text()='Select and Close']" />
+        <Control label="radio" type="CheckBox" xpath="//input[@type='radio']" />
+    </Page>
+    <Page name="Media Placements">
+        <Control label="Name" type="TextBox" xpath="//input[@ng-model='searchMediaItems.filters.searchText.value']" />
+        <Control label="Search" type="Button" xpath="//button[text()='Search']" />
+        <Control label="Select and Close" type="Button" xpath="//button[text()='Select and Close']" />
+        <Control label="radio" type="CheckBox" xpath="//input[@type='radio']" />
+    </Page>
+    <Page name="Delete Confirmation">
+        <Control label="OK" type="Button" xpath="//button[text()='OK']" />
+    </Page>
+</Pages>
